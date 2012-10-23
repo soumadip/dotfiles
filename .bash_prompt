@@ -1,0 +1,34 @@
+# Define how Bash prompt looks like:
+#
+# User @ Host – working dir
+#export PS1=”\u@\h\w$ ”
+#export PS1=”\u@\h\w: “
+
+# Cli Colors
+export CLICOLOR=1
+# use yellow for dir’s
+export LSCOLORS=dxfxcxdxbxegedabagacad
+
+# history handling
+#
+# Erase duplicates
+export HISTCONTROL=erasedups
+# resize history size
+export HISTSIZE=10000
+# append to bash_history if Terminal.app quits
+shopt -s histappend
+PS1="\h:\W$ "
+#PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+
+
+
+function parse_git_branch () {
+       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+NO_COLOUR="\[\033[0m\]"
+
+PS1="$GREEN\u@machine$NO_COLOUR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "

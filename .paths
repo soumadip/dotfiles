@@ -1,0 +1,4 @@
+# Adjust $PATH
+if [ -d ~/.scripts ] ; then
+  export PATH=$HOME/.bin:$PATH
+fi
