@@ -1,8 +1,11 @@
 # Dir navigation
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='../../..'
 alias ~='cd ~'
-alias ll='tree --dirsfirst -ChFupDaLg 1'
+alias ll='ls -l'
+alias la='ls -la'
+alias cl='clear'
 
 #alias curl=aug-curl
 # Utilities

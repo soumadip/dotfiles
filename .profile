@@ -6,10 +6,6 @@ if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
 
-if [ -f ~/.functions ]; then
-  source ~/.functions
-fi
-
 if [ -f ~/.paths ]; then
   source ~/.paths
 fi
@@ -41,13 +37,6 @@ export LC_MONETARY="it_IT.UTF-8"
 export LC_NUMERIC="it_IT.UTF-8"
 export LC_TIME="it_IT.UTF-8"
 export LC_ALL=
-
-alias cl="clear"
-alias ll="ls -l"
-alias la="ls -la"
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
 
 
 
