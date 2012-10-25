@@ -1,7 +1,7 @@
 # Dir navigation
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ....='../../..'
+alias ....='cd ../../..'
 alias ~='cd ~'
 alias ll='ls -l'
 alias la='ls -la'
