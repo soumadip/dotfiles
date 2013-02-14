@@ -6,6 +6,7 @@ alias ~='cd ~'
 alias ll='ls -l'
 alias la='ls -la'
 alias cl='clear'
+alias fuck='sudo !!'
 
 #alias curl=aug-curl
 # Utilities
