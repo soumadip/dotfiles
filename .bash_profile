@@ -29,14 +29,14 @@ export NODE_PATH="$NVM_DIR/$VERSION/lib/node_modules"
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
 
-export LANG="it_IT.UTF-8"
-export LC_COLLATE="it_IT.UTF-8"
-export LC_CTYPE="it_IT.UTF-8"
-export LC_MESSAGES="it_IT.UTF-8"
-export LC_MONETARY="it_IT.UTF-8"
-export LC_NUMERIC="it_IT.UTF-8"
-export LC_TIME="it_IT.UTF-8"
-export LC_ALL=
+#export LANG="es_ES.UTF-8"
+#export LC_COLLATE="es_ES.UTF-8"
+#export LC_CTYPE="es_ES.UTF-8"
+#export LC_MESSAGES="es_ES.UTF-8"
+#export LC_MONETARY="es_ES.UTF-8"
+#export LC_NUMERIC="es_ES.UTF-8"
+#export LC_TIME="es_ES.UTF-8"
+#export LC_ALL=
 
 
 
