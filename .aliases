@@ -8,7 +8,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cl='clear'
 alias fuck='sudo !!'
-
+alias screenshotwsleep='sleep 5; import -window root ~/screenshot.png'
 #alias curl=aug-curl
 # Utilities
 #alias a="ack -ia"
