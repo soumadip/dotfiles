@@ -4,11 +4,14 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
 alias ll='ls -lF'
-alias la='ls -A'
+alias la='ls -lFA'
 alias l='ls -CF'
 alias cl='clear'
 alias fuck='sudo !!'
 alias screenshotwsleep='sleep 5; import -window root ~/screenshot.png'
+alias startserver='python -m SimpleHTTPServer'
+
+
 #alias curl=aug-curl
 # Utilities
 #alias a="ack -ia"
