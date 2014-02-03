@@ -17,27 +17,28 @@
   st = status
   ac = !git add -A && git commit -am
   lg = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-
+[push]
+  default = current
 [apply]
-whitespace = fix
+  whitespace = fix
 [core]
-excludesfile = ~/.gitignore
-attributesfile = ~/.gitattributes
-whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+  whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 [color]
-ui = auto
+  ui = auto
 [color "branch"]
-current = yellow reverse
-local = yellow
-remote = green
+  current = white reverse
+  local = white
+  remote = blue
 [color "diff"]
-meta = yellow bold
-frag = magenta bold
-old = red bold
-new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-added = yellow
-changed = green
-untracked = cyan
+  added = green
+  changed = cyan
+  untracked = red
 [merge]
-log = true
+  log = true
