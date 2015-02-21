@@ -3,13 +3,26 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ~='cd ~'
-alias ll='ls -lF --color'
-alias la='ls -lFA --color'
-alias l='ls -CF --color'
+alias ll='ls -lF'
+alias la='ls -lFA'
+alias l='ls -CF'
 alias cl='clear'
 alias fuck='sudo !!'
 alias screenshotwsleep='sleep 5; import -window root ~/screenshot.png'
 alias startserver='python -m SimpleHTTPServer'
+
+### Software - curses ###
+alias files='ranger'
+alias music='ncmpcpp'
+alias mail='mutt'
+alias network='wicd-curses'
+alias chat='irssi'
+alias im='finch'
+alias twitter='turses'
+
+# Processing and Netlogo
+alias processing='/usr/share/processing/processing &'
+alias netlogo='sh /usr/share/netlogo/netlogo.sh &'
 
 
 #alias curl=aug-curl
