@@ -13,6 +13,7 @@ alias startserver='python -m SimpleHTTPServer'
 
 ### Software - curses ###
 alias files='ranger'
+alias pdf='zathura'
 alias music='ncmpcpp'
 alias mail='mutt'
 alias network='wicd-curses'
