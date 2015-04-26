@@ -17,9 +17,6 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 # append to bash_history if Terminal.app quits
 shopt -s histappend
-PS1="\h:\W$ "
-#PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-
 
 
 function parse_git_branch () {
@@ -31,6 +28,11 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 GREY="\[\033[0;37m\]"
+PINK="\[\033[1;35m\]"
+LIGHTRED="\[\033[1;31m\]"
 
-PS1="$GREY\w\$(parse_git_branch)$NO_COLOUR\$ "
+#PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+PS1="$LIGHTRED\w\$(parse_git_branch)$NO_COLOUR\$ "
 #PS1="$GREEN\u:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+
+# Configure something like this: edipotrebol at edipotrebol-machine in ~/dev on master
